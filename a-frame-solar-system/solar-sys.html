@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Solar System</title>
+        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    </head>
+    
+    <body>
+        <a-scene>
+            <a-entity position="0 100 350 "> <a-camera></a-camera>
+            </a-entity>
+            
+            <assets>
+                --must insert each planet's surface texture
+                <img id = "sun" src = "sunmap.jpg">
+                <img id = "mercury" src = "mercurymap.jpg">
+                <img id = "venus" src = "venusmap.jpg">
+                <img id = "earth" src = "earthmap1k.jpg">
+                <img id = "moon" src = "moonmap.jpg">
+                <img id = "mars" src  = "mars_1k_color.jpg">
+                <img id = "jupiter" src = "jupitermap.jpg">
+                <img id = "saturn" src = "saturnmap.jpg">
+                    <img id = "s-ring" src = "saturnringcolor.jpg">
+                <img id = "uranus" src = "uranusmap.jpg">
+                    <img id = "u-ring" src = "uranusringcolor.jpg">
+                <img id = "neptune" src = "neptunemap.jpg">
+                <img id = "pluto" src = "plutomap1k.jpg">
+            </assets>
+            
+            
+            
+            <a-sky color = "#000000"></a-sky>
+           
+            <a-sphere id = "sun" src = "#sun" radius= "100" position = "0 0 0">
+                <a-ring color = "white" radius-inner="155" radius-outer="160" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="170" radius-outer="175" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="183" radius-outer="188" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="203" radius-outer="208" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="295" radius-outer="300" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="445" radius-outer="450" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="595" radius-outer="600" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="695" radius-outer="700" rotation = "88 0 0 "></a-ring>
+                <a-ring color = "white" radius-inner="945" radius-outer="950" rotation = "88 0 0 "></a-ring>
+            </a-sphere>
+            
+
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+                          <a-sphere id = "mercury" src = "#mercury" radius= "1.52" position = "160 0 0"></a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="12000" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+            
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+                           <a-sphere id = "venus" src = "#venus" radius= "3.8" position = "175 0 0"></a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="17179" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+            
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+            <a-sphere id = "earth" src = "#earth" radius= "4" position = "188 0 0">
+            </a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="20000" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+            <a-sphere id = "moon" src = "#moon" radius= "1" position = "188 5 5"></a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="20000" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+            
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+            <a-sphere id = "mars" src = "#mars" radius= "2.12" position = "208 0 0"></a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="24814" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+              <a-sphere id = "jupiter" src = "#jupiter" radius= "44" position = "300 0 0">
+                   <a-animation attribute="rotation" easing="linear" dur="45517" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+
+            
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+                                      <a-sphere id = "saturn" src = "#saturn" radius= "37.8" position = "450 0 0">
+                                            <a-ring src="#s-ring" radius-inner="43" radius-outer="85" rotation = "65 35 0"></a-ring>
+                                    </a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+            
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+                          <a-sphere id = "uranus" src = "#uranus" radius= "18" position = "600 0 0">
+                                <a-ring color = "white" radius-inner="29" radius-outer="30" rotation = "20 35 0"></a-ring>
+                        </a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="88000" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+            
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+                                      <a-sphere id = "neptune" src = "#neptune" radius= "15.52" position = "700 0 0"></a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="110000" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+            
+            
+
+            <a-entity rotation="0 45 0">   
+            <a-animation attribute="rotation" easing="linear" dur="60000" to="0 360 0" repeat="indefinite"> </a-animation>
+                                      <a-sphere id = "pluto" src = "#pluto" radius= "1" position = "950 0 0 "></a-sphere>
+                   <a-animation attribute="rotation" easing="linear" dur="150000" to="0 360 0" repeat="indefinite"> </a-animation> 
+              </a-sphere>
+            </a-entity>
+            
+                    
+        </a-scene>
+        
+    </body>
+    
+    
+    
+</html>
